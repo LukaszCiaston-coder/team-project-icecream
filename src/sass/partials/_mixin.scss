@@ -5,12 +5,12 @@ $desktop: 1280px;
 // media devices
 @mixin tablet {
     @media screen and (min-width: #{$tablet}) {
-        @content ;
+        @content;
     }
 }
 
 @mixin desktop {
     @media screen and (min-width: #{$desktop}) {
-        @content ;
+        @content;
     }
 }
