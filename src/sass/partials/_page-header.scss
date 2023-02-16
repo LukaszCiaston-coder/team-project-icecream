@@ -5,6 +5,11 @@
 
   //   }
 
+  &__bar {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     font-family: var(--secondary-font-family);
     font-weight: 400;
@@ -21,5 +26,17 @@
     // 45.84px
     line-height: 0.96;
     letter-spacing: 0.04em;
+  }
+
+  &__button-wrap {
+    display: flex;
+  }
+
+  &__paragraph {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
   }
 }

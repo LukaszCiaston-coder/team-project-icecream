@@ -1,0 +1,7 @@
+.navigation {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
