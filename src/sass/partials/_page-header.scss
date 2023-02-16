@@ -1,13 +1,34 @@
 .page-header {
   background-color: var(--bg-color-dark-pink);
 
-  //   &__container {
+  &__container {
+    height: 502px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 6px;
+    // background-image: url();
+    background-size: 346px 346px;
 
-  //   }
+    @include tablet {
+      padding-top: 37px;
+      height: 399px;
+    }
+  }
 
   &__bar {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 137px;
+
+    @include tablet {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__holder {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__title {

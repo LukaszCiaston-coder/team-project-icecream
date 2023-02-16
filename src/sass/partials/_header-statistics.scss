@@ -1,0 +1,7 @@
+.header-statistics {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+}
