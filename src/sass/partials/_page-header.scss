@@ -1,0 +1,25 @@
+.page-header {
+  background-color: var(--bg-color-dark-pink);
+
+  //   &__container {
+
+  //   }
+
+  &__title {
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-primary-light);
+  }
+
+  &__title-span {
+    color: var(--color-secondary-dark-pink);
+    font-size: 48px;
+    // 45.84px
+    line-height: 0.96;
+    letter-spacing: 0.04em;
+  }
+}
