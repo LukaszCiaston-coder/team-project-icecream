@@ -29,6 +29,10 @@
   &__holder {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      margin-bottom: 66px;
+    }
   }
 
   &__title {
