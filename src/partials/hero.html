@@ -1,56 +1,72 @@
 <header class="page-header">
   <div class="container page-header__container">
-    <div>
+    <div class="page-header__bar">
       <div class="logo">
-        <a class="link" href="./index.html"></a>
+        <a class="link" href="./index.html">
+          <img src="./images/logo-x1.png" alt="brand logo" width="199" height="50" />
+        </a>
       </div>
 
-      <button>
-        <!-- <svg class="mobile-menu-burger" width="20" height="12">
-          <use href=""></use>
-        </svg> -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="">Home</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="">About us</a></li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">How itU+2019s made?</a>
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="">Our products</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="mobile-menu-burger menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="20" height="12">
+          <use href="./images/icons.svg#icon-mobile-menu"></use>
+        </svg>
       </button>
 
-      <h1 class="page-header__title">
-        ice cream <br />
-        made with
-        <span>passion</span>
-      </h1>
-
-      <button><a class="link" href="#">Products</a></button>
-      <button><a class="link" href="#">How it's made?</a></button>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
+      <!-- <button class="button button-buynow">Buy now</button> -->
     </div>
 
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="">Home</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="">About us</a></li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="">How itU+2019s made?</a>
-        </li>
-        <li class="navigation__item"><a class="navigation__link" href="">Our products</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="page-header__holder">
+      <div>
+        <h1 class="page-header__title">
+          ice cream <br />
+          made with <br />
+          <span class="page-header__title-span">passion</span>
+        </h1>
 
-    <div>
-      <button>Buy now</button>
+        <div class="page-header__button-wrap">
+          <button class="button">
+          <!-- <a class="link" href="#">Products</a> -->
+          </button>
+          <button class="button">
+          <!-- <a class="link" href="#">How it's made?</a> -->
+          </button>
+        </div>
+      </div>
 
-      <ul>
+      <ul class="header-statistics">
         <li>
-          <h3>16</h3>
-          <p>cafes</p>
+          <h3 class="header-statistics__number">16</h3>
+          <p class="header-statistics__label">cafes</p>
         </li>
         <li>
-          <h3>23</h3>
-          <p>food trucks</p>
+          <h3 class="header-statistics__number">23</h3>
+          <p class="header-statistics__label">food trucks</p>
         </li>
       </ul>
     </div>
+
+    <p class="page-header__paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
+
+    <div></div>
   </div>
 </header>
