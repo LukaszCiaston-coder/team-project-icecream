@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     padding-top: 6px;
-    // background-image: url();
+    min-height: 400px;
     background-size: 346px 346px;
 
     @include tablet {
@@ -19,6 +19,8 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 137px;
+    position: relative;
+    z-index: 999;
 
     @include tablet {
       height: 50px;
@@ -33,6 +35,8 @@
   &__holder {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 999;
 
     @include tablet {
       margin-bottom: 66px;
@@ -72,6 +76,28 @@
       color: var(--color-primary-light);
       width: 114px;
       height: 48px;
+      margin-left: 120px;
     }
+  }
+
+  &__ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    max-width: 171px;
+  }
+
+  &__tasty {
+    @include tablet {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &__milk {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    max-width: 171px;
   }
 }
