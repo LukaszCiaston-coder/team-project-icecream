@@ -26,6 +26,10 @@
     }
   }
 
+  &__switch {
+    display: flex;
+  }
+
   &__holder {
     display: flex;
     justify-content: space-between;
@@ -62,6 +66,12 @@
 
     @include tablet {
       display: block;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.5;
+      color: var(--color-primary-light);
+      width: 114px;
+      height: 48px;
     }
   }
 }

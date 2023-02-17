@@ -4,5 +4,6 @@
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  border: none;
+  // deletes underline from links (separate partial _link.scss could be created)
+  text-decoration: none;
 }
