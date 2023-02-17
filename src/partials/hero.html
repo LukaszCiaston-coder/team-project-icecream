@@ -27,24 +27,24 @@
         </ul>
       </nav>
 
-      <a class="button" href=""
-        >Buy now
-        <svg class="buy__icon" width="8" height="10">
-          <use href="./images/icons.svg#icon-closing-bracket"></use>
-        </svg>
-      </a>
+      <div class="page-header__switch">
+        <button
+          class="mobile-menu-burger menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="20" height="12">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
 
-      <button
-        class="mobile-menu-burger menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg width="20" height="12">
-          <use href="./images/icons.svg#icon-mobile-menu"></use>
-        </svg>
-      </button>
-
-      <!-- <button class="button button-buynow">Buy now</button> -->
+        <a class="button" href=""
+          >Buy now
+          <svg class="buy__icon" width="8" height="10">
+            <use href="./images/icons.svg#icon-closing-bracket"></use>
+          </svg>
+        </a>
+      </div>
     </div>
 
     <div class="page-header__holder">
@@ -62,11 +62,11 @@
       </div>
 
       <ul class="header-statistics">
-        <li>
+        <li class="header-statistics__element">
           <h3 class="header-statistics__number">16</h3>
           <p class="header-statistics__label">cafes</p>
         </li>
-        <li>
+        <li class="header-statistics__element">
           <h3 class="header-statistics__number">23</h3>
           <p class="header-statistics__label">food trucks</p>
         </li>
@@ -78,7 +78,13 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
-      <a class="link button" href="#">Products</a>
+
+      <!-- link do sekcji How it's made? -->
+      <a class="link button" href="#">
+        <svg width="20" height="12">
+          <use href="./images/icons.svg#icon-Burger"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </header>
