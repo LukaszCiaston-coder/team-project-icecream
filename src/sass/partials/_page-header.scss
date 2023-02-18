@@ -1,6 +1,36 @@
 .page-header {
   background-color: var(--bg-color-dark-pink);
 
+  &::after {
+    display: inline-block;
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    top: 83px;
+    z-index: 0;
+    content: '';
+    border-radius: 50%;
+    background-color: var(--color-secondary-light-pink);
+
+    @include tablet {
+      width: 324px;
+      height: 322px;
+      top: 31px;
+      right: 137px;
+    }
+
+    @include desktop {
+      width: 538px;
+      height: 538px;
+      top: 52px;
+      right: 242px;
+    }
+
+    @include desktop {
+    }
+  }
+
   &__container {
     height: 502px;
     position: relative;
@@ -110,6 +140,7 @@
     bottom: 0;
     right: 32px;
     max-width: 171px;
+    z-index: 1;
 
     @include tablet {
       right: 247px;
@@ -131,6 +162,7 @@
       right: 34px;
       width: 168px;
       height: 133px;
+      z-index: 1;
     }
 
     @include desktop {
@@ -164,13 +196,15 @@
   display: none;
 
   @include tablet {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 160px;
     height: 44px;
     border-radius: 22px;
     display: flex;
     justify-content: center;
     background-color: var(--color-primary-light);
+    margin-left: 30px;
 
     &:hover,
     &:focus {
@@ -183,6 +217,10 @@
       line-height: 21px;
       color: var(--color-secondary-dark-pink);
       margin-right: 12px;
+    }
+
+    &__icon {
+      fill: var(--color-secondary-dark-pink);
     }
   }
 }
