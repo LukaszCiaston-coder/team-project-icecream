@@ -17,7 +17,7 @@
       width: 324px;
       height: 322px;
       top: 31px;
-      right: 137px;
+      left: 307px;
     }
 
     @include desktop {
@@ -41,11 +41,11 @@
 
     @include tablet {
       padding-top: 37px;
-      height: 399px;
+      max-height: 399px;
     }
 
     @include desktop {
-      height: 665px;
+      max-height: 665px;
     }
   }
 
@@ -101,6 +101,21 @@
 
   &__button-wrap {
     display: flex;
+  }
+
+  &-btn1 {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      width: 160px;
+      height: 44px;
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      background-color: var(--color-primary-light);
+    }
   }
 
   &__paragraph {
@@ -188,6 +203,7 @@
       height: 191px;
       left: 77px;
       bottom: 45px;
+      margin-top: 56px;
     }
   }
 }
