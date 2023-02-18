@@ -4,15 +4,18 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-top: 170px;
   @include tablet {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    margin-top: 197px;
   }
   @include desktop {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    margin-top: 234px;
   }
   &__name {
     display: none;
@@ -224,6 +227,7 @@
     padding: 12px;
     cursor: pointer;
     top: -84px;
+    border: none;
     @include tablet {
       width: 174px;
     }
@@ -243,6 +247,7 @@
     background-color: var(--bg-color-white);
     padding: 12px;
     cursor: pointer;
+    border: none;
     @include tablet {
       width: 174px;
     }

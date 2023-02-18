@@ -1,0 +1,110 @@
+.advantages {
+  background-color: var(--bg-color-light-pink);
+  &--margin-auto {
+    margin: auto;
+  }
+  &__header {
+    // Class to completly hide header
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+  &--item-first::before {
+    content: url(/src/images/icon1.png);
+    margin-bottom: 16px;
+  }
+  &--item-second::before {
+    content: url(/src/images/icon2.png);
+    margin-bottom: 16px;
+  }
+  &--item-third::before {
+    content: url(/src/images/icon3.png);
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    font-family: var(--secondary-font-family);
+    color: var(--color-secondary-dark-pink);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 4%;
+    margin-bottom: 20px;
+  }
+  &__description-text {
+    font-family: var(--main-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.76;
+    letter-spacing: 2%;
+    margin: 0 0 0 0;
+  }
+  @media screen and (min-width: 768px) {
+    &__list {
+      flex-direction: row;
+      gap: 60px;
+    }
+    &__description-text {
+      font-size: 14px;
+    }
+    &__text {
+      font-size: 48px;
+      margin-bottom: 13px;
+    }
+    &--item-first::before {
+      content: url(/src/images/icon1.png);
+      margin-bottom: 36px;
+    }
+    &--item-second::before {
+      content: url(/src/images/icon2.png);
+      margin-bottom: 36px;
+    }
+    &--item-third::before {
+      content: url(/src/images/icon3.png);
+      margin-bottom: 36px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &__list {
+      gap: 30px;
+    }
+    &__description-text {
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 58px;
+      margin-bottom: 15px;
+    }
+    &--item-first::before {
+      content: url(/src/images/icon1.png);
+      margin-bottom: 40px;
+    }
+    &--item-second::before {
+      content: url(/src/images/icon2.png);
+      margin-bottom: 40px;
+    }
+    &--item-third::before {
+      content: url(/src/images/icon3.png);
+      margin-bottom: 40px;
+    }
+  }
+}
