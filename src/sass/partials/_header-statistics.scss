@@ -1,0 +1,46 @@
+.header-statistics {
+  display: none;
+
+  @include tablet {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__element {
+    &:first-child {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__number {
+    font-family: var(--secondary-font-family);
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-secondary-dark-pink);
+
+    @include desktop {
+      font-weight: 400;
+      font-size: 46px;
+      line-height: 53px;
+    }
+  }
+
+  &__label {
+    font-family: var(--main-font-family);
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    color: var(--color-primary-light);
+
+    @include desktop {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}

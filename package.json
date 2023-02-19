@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://LukaszCiaston-coder.github.com/migace/team-project-icecream",
+  "homepage": "https://lukaszciaston-coder.github.io/team-project-icecream",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url team-project-icecream"
+    "build": "parcel build src/*.html --public-url /team-project-icecream/"
   },
   "repository": {
     "type": "git",

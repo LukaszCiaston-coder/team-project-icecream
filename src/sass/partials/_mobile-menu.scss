@@ -1,0 +1,14 @@
+.mobile-menu-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  fill: var(--color-secondary-dark-pink);
+
+  @include desktop {
+    display: none;
+  }
+}

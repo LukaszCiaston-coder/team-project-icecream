@@ -1,0 +1,9 @@
+.button {
+  font-family: var(--main-font-family);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  // deletes underline from links (separate partial _link.scss could be created)
+  text-decoration: none;
+}
