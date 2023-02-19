@@ -9,3 +9,12 @@
 .gallery.container {
   padding-inline: 0;
 }
+.gallery__list {
+}
+.gallery__column {
+  display: flex;
+  flex-direction: row;
+}
+.column__item {
+  display: inline;
+}
