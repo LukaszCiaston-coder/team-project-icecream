@@ -13,6 +13,10 @@
       padding-top: 37px;
       height: 399px;
     }
+
+    @include desktop {
+      height: 665px;
+    }
   }
 
   &__bar {
@@ -40,6 +44,10 @@
 
     @include tablet {
       margin-bottom: 66px;
+    }
+
+    @include desktop {
+      margin-top: 74px;
     }
   }
 
@@ -70,34 +78,111 @@
 
     @include tablet {
       display: block;
+      font-family: var(--main-font-family);
       font-weight: 400;
       font-size: 8px;
       line-height: 1.5;
+      letter-spacing: 0.03em;
       color: var(--color-primary-light);
       width: 114px;
       height: 48px;
       margin-left: 120px;
     }
+
+    @include desktop {
+      width: 200px;
+      height: 78px;
+      font-size: 14px;
+      line-height: 1.4;
+      margin-top: 112px;
+    }
   }
+
+  &__arrow-link {
+    width: 20px;
+    height: 12px;
+  }
+
+  // images _______________________________________
 
   &__ice-cream {
     position: absolute;
     bottom: 0;
-    right: 10%;
+    right: 32px;
     max-width: 171px;
+
+    @include tablet {
+      right: 247px;
+    }
+
+    @include desktop {
+      max-width: 236px;
+      height: 557px;
+      right: 450px;
+    }
   }
 
   &__tasty {
+    display: none;
     @include tablet {
+      display: block;
       position: absolute;
       bottom: 0;
+      right: 34px;
+      width: 168px;
+      height: 133px;
+    }
+
+    @include desktop {
+      width: 293px;
+      height: 232px;
     }
   }
 
   &__milk {
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    max-width: 171px;
+    display: none;
+    @include tablet {
+      width: 124px;
+      height: 126px;
+      display: block;
+      position: absolute;
+      bottom: 28px;
+      left: 34px;
+      max-width: 171px;
+    }
+
+    @include desktop {
+      width: 188px;
+      height: 191px;
+      left: 77px;
+      bottom: 45px;
+    }
+  }
+}
+
+.buy-now-btn {
+  display: none;
+
+  @include tablet {
+    display: block;
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary-light);
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+
+    &__span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--color-secondary-dark-pink);
+      margin-right: 12px;
+    }
   }
 }
