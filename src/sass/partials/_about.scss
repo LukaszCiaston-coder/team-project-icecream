@@ -1,6 +1,6 @@
 .about {
-  padding-bottom: 94px;
-  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-top: 125px;
   background-color: var(--bg-color-light-pink);
 
   @include tablet {
@@ -59,6 +59,7 @@
 
   .about__content {
     display: flex;
+    align-items: center;
     flex-direction: column;
 
     @include tablet {
@@ -75,13 +76,14 @@
     color: var(--color-primary-dark);
     text-align: left;
     font-size: 12px;
+    font-weight: 500;
     line-height: 1.58;
-    padding-bottom: 30px;
+    padding: 0 30px 30px 30px;
 
     @include tablet {
       font-size: 14px;
       line-height: 1.78;
-      padding-bottom: 32px;
+      padding: 0 0 32px 0;
     }
 
     @include desktop {
@@ -96,14 +98,30 @@
     color: var(--color-primary-grey);
     font-size: 12px;
     line-height: 1.58;
+    padding: 0 30px 22px 30px;
 
     @include tablet {
       font-size: 14px;
       line-height: 1.78;
+      padding: 0;
     }
 
     @include desktop {
       line-height: 1.92;
     }
+  }
+
+  &__button {
+    width: 176px;
+    height: 44px;
+    justify-content: center;
+    gap: 14px;
+    border-width: 0;
+    background-color: var(--color-primary-light);
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    line-height: 1.28;
+    font-weight: 700;
+    color: var(--color-secondary-dark-pink);
   }
 }
