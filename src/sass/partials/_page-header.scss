@@ -89,18 +89,38 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-primary-light);
+
+    @include tablet {
+      font-size: 22px;
+      line-height: 25px;
+    }
+
+    @include desktop {
+      font-size: 38px;
+      line-height: 44px;
+    }
   }
 
   &__title-span {
     color: var(--color-secondary-dark-pink);
     font-size: 48px;
-    // 45.84px
     line-height: 0.96;
     letter-spacing: 0.04em;
+
+    @include tablet {
+      font-size: 34px;
+      line-height: 31px;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      line-height: 53px;
+    }
   }
 
   &__button-wrap {
     display: flex;
+    margin-top: 20px;
   }
 
   &-btn1 {
@@ -109,12 +129,45 @@
     @include tablet {
       display: flex;
       align-items: center;
-      width: 160px;
-      height: 44px;
+      width: 62.4px;
+      height: 24px;
       border-radius: 22px;
       display: flex;
       justify-content: center;
+      color: var(--color-primary-light);
+      background-color: var(--color-secondary-dark-pink);
+      font-size: 8px;
+      line-height: 10px;
+      margin-right: 8px;
+    }
+
+    @include desktop {
+      width: 104px;
+      height: 40px;
+      margin-right: 15px;
+    }
+  }
+
+  &-btn2 {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      width: 82.8px;
+      height: 24px;
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      color: var(--color-secondary-dark-pink);
       background-color: var(--color-primary-light);
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    @include desktop {
+      width: 104px;
+      height: 40px;
     }
   }
 
@@ -132,6 +185,7 @@
       width: 114px;
       height: 48px;
       margin-left: 120px;
+      // padding-bottom: 59px;
     }
 
     @include desktop {
@@ -144,8 +198,13 @@
   }
 
   &__arrow-link {
-    width: 20px;
-    height: 12px;
+    outline: none;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--color-primary-light);
+    margin-top: 7px;
   }
 
   // images _______________________________________
@@ -188,6 +247,7 @@
 
   &__milk {
     display: none;
+
     @include tablet {
       width: 124px;
       height: 126px;
