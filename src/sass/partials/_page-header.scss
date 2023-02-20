@@ -1,30 +1,36 @@
 .page-header {
   background-color: var(--bg-color-dark-pink);
 
-  &::after {
-    display: inline-block;
+  &__circle-wrapper {
+    width: 100%;
+    overflow: hidden;
     position: absolute;
+  }
+
+  &__circle {
+    display: inline-block;
+    // position: absolute;
     width: 346px;
     height: 344px;
-    left: 36px;
-    top: 83px;
+    margin-left: 36px;
+    margin-top: 83px;
     z-index: 0;
-    content: '';
+    // content: '';
     border-radius: 50%;
     background-color: var(--color-secondary-light-pink);
 
     @include tablet {
       width: 324px;
       height: 322px;
-      top: 31px;
-      left: 307px;
+      margin-top: 11px;
+      margin-left: 256px;
     }
 
     @include desktop {
       width: 538px;
       height: 538px;
-      top: 52px;
-      right: 242px;
+      margin-top: 19px;
+      margin-left: 333px;
     }
 
     @include desktop {
@@ -46,8 +52,8 @@
 
     // this part does not work, computed height is 555px ?
     @include desktop {
-      height: 100%;
-      max-height: 665px;
+      height: 665px;
+      max-height: 100%;
     }
   }
 
