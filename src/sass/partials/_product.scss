@@ -1,11 +1,12 @@
 .products {
-  margin-top: 121px;
- 
+  padding: 121px 0 98px;
   background-color: var(--color-primary-light);
 
+  @include tablet {
+    padding: 122px 112px;
+  }
   @include desktop {
- margin-top:127px;
-   
+    padding: 127px 114px;
   }
 
   &__label {
@@ -25,7 +26,6 @@
 
     @include desktop {
       font-size: 30px;
-      margin-top: 127px;
     }
   }
 
@@ -39,18 +39,18 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-secondary-dark-pink);
-    margin-bottom: 30px;
+    margin-bottom: 144px;
 
     @include tablet {
       font-size: 48px;
       line-height: 1.14;
-      margin-bottom: 46px;
+      margin-bottom: 150px;
     }
 
     @include desktop {
       font-size: 58px;
       line-height: 1.13;
-      margin-bottom: 49px;
+      margin-bottom: 260px;
     }
   }
 
@@ -59,11 +59,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 130px;
 
     @include tablet {
-        flex-direction: row;
+      flex-direction: row;
       flex-wrap: nowrap;
+      gap: 20px;
+    }
+
+    @include desktop {
+      gap: 27px;
     }
   }
 
@@ -71,7 +76,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     width: 100%;
     height: 485px;
     max-width: 480px;
@@ -79,7 +84,131 @@
     padding: 40px;
 
     @include tablet {
-      flex-basis: calc((100% - 40px) / 3);
+      max-width: 220px;
+      padding: 40px 11px;
+    }
+
+    @include desktop {
+      max-width: 329px;
+      height: 525px;
+      padding: 50px 45px;
+    }
+
+    &:first-child::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -113px;
+      transform: translateX(-50%);
+      width: 249px;
+      height: 252px;
+      background-image: url('../images/home-pic1-mob-249.png');
+      background-size: 249px 252px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/home-pic1-mob-498.png');
+      }
+
+      @include tablet {
+        width: 220px;
+        height: 226px;
+        background-image: url('../images/home-pic1-tab-220.png');
+        background-size: 220px 226px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/home-pic1-tab-440.png');
+        }
+      }
+
+      @include desktop {
+        top: -230px;
+        width: 335px;
+        height: 335px;
+        background-image: url('../images/home-pic1-desk-335.png');
+        background-size: 335px 335px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/home-pic1-desk-670.png');
+        }
+      }
+    }
+
+    &:nth-child(2)::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -113px;
+      transform: translateX(-50%);
+      width: 249px;
+      height: 252px;
+      background-image: url('../images/home-pic2-mob-249.png');
+      background-size: 249px 252px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/home-pic2-mob-498.png');
+      }
+
+      @include tablet {
+        width: 220px;
+        height: 226px;
+        background-image: url('../images/home-pic2-tab-220.png');
+        background-size: 220px 226px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/home-pic2-tab-440.png');
+        }
+      }
+
+      @include desktop {
+        top: -230px;
+        width: 335px;
+        height: 335px;
+        background-image: url('../images/home-pic2-desk-335.png');
+        background-size: 335px 335px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/home-pic2-desk-670.png');
+        }
+      }
+    }
+
+    &:nth-child(3)::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -113px;
+      transform: translateX(-50%);
+      width: 249px;
+      height: 252px;
+      background-image: url('../images/home-pic3-mob-249.png');
+      background-size: 249px 252px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/home-pic3-mob-498.png');
+      }
+
+      @include tablet {
+        width: 220px;
+        height: 226px;
+        background-image: url('../images/home-pic3-tab-220.png');
+        background-size: 220px 226px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/home-pic3-tab-440.png');
+        }
+
+        @include desktop {
+          top: -230px;
+          width: 335px;
+          height: 335px;
+          background-image: url('../images/home-pic3-desk-335.png');
+          background-size: 335px 335px;
+
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url('../images/home-pic3-desk-670.png');
+          }
+        }
+      }
     }
   }
 
@@ -105,6 +234,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-primary-light);
+    margin-top: auto;
+
+    @include tablet {
+      margin-top: 120px;
+    }
+
+    @include desktop {
+      margin-top:110px;
+      font-size: 30px;
+      line-height: 1.13;
+    }
 
     &::after {
       content: '...';
@@ -126,8 +266,21 @@
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+
+    @include desktop {
+      font-size: 16px;
+      line-height: 1.75;
+      width: 241px;
+    }
   }
 
+  &__text-cut {
+    display: inline;
+
+    @include tablet {
+      display: none;
+    }
+  }
   &__arrow-btn {
     background-image: url('/src/images/arrow-right-4-x1-min.png');
     background-size: cover;
@@ -136,16 +289,10 @@
     content: '';
     width: 40px;
     height: 40px;
-    margin-bottom: 41px;
     margin: 0 auto;
-    margin-bottom: 98px;
 
-    @include tablet{
-        margin-bottom:112px;
-    }
-
-    @include desktop {
-        margin-bottom:119px;
+    @include desktop{
+      margin: 30px auto;
     }
   }
 }
