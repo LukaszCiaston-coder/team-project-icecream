@@ -231,6 +231,7 @@
     justify-content: center;
     align-items: center;
     fill: var(--color-secondary-dark-pink);
+    position: relative;
     z-index: 9999;
 
     @include desktop {
