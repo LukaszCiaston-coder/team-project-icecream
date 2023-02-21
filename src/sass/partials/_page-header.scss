@@ -243,6 +243,8 @@
       background-color: var(--color-secondary-dark-pink);
       fill: var(--color-primary-light);
       transform: rotate(90deg);
+
+      // circle wrapper prevents the button from being clicked
     }
   }
 
