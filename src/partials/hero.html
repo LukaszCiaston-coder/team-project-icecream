@@ -1,5 +1,7 @@
 <header class="page-header">
   <div class="container page-header__container">
+    <div class="page-header__circle-wrapper"><div class="page-header__circle"></div></div>
+
     <div class="page-header__bar">
       <div class="logo">
         <a class="link" href="./index.html">
@@ -38,9 +40,9 @@
           </svg>
         </button>
 
-        <a class="buy-now-btn button" href=""
+        <a class="buy-now-btn" href=""
           ><span class="buy-now-btn__span">Buy now</span>
-          <svg class="buy-now__icon" width="8" height="10">
+          <svg class="buy-now-btn__icon" width="8" height="10">
             <use href="./images/icons.svg#icon-closing-bracket"></use>
           </svg>
         </a>
@@ -56,8 +58,8 @@
         </h1>
 
         <div class="page-header__button-wrap">
-          <a class="link button" href="#">Products</a>
-          <a class="link button" href="#">How it<span>&#39;</span>s made?</a>
+          <a class="link page-header-btn1" href="#">Products</a>
+          <a class="link page-header-btn2" href="#">How it<span>&#39;</span>s made?</a>
         </div>
       </div>
 
@@ -73,16 +75,18 @@
       </ul>
     </div>
 
-    <div>
-      <p class="page-header__paragraph">
+    <div class="page-header__paragraph">
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </p>
 
       <!-- link do sekcji How it's made? -->
-      <a class="link" href="#">
-        <img class="page-header__arrow-link" href="" />
-      </a>
+      <div class="page-header__arrow-link">
+        <a class="link" href="#">
+          <!-- svg icon missing in sprite  -->
+        </a>
+      </div>
     </div>
 
     <img

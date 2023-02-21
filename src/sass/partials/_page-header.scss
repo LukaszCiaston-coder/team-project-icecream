@@ -1,6 +1,42 @@
 .page-header {
   background-color: var(--bg-color-dark-pink);
 
+  &__circle-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  &__circle {
+    display: inline-block;
+    // position: absolute;
+    width: 346px;
+    height: 344px;
+    margin-left: 36px;
+    margin-top: 83px;
+    z-index: 0;
+    // content: '';
+    border-radius: 50%;
+    background-color: var(--color-secondary-light-pink);
+
+    @include tablet {
+      width: 324px;
+      height: 322px;
+      margin-top: 11px;
+      margin-left: 256px;
+    }
+
+    @include desktop {
+      width: 538px;
+      height: 538px;
+      margin-top: 19px;
+      margin-left: 333px;
+    }
+
+    @include desktop {
+    }
+  }
+
   &__container {
     height: 502px;
     position: relative;
@@ -11,11 +47,13 @@
 
     @include tablet {
       padding-top: 37px;
-      height: 399px;
+      max-height: 399px;
     }
 
+    // this part does not work, computed height is 555px ?
     @include desktop {
       height: 665px;
+      max-height: 100%;
     }
   }
 
@@ -48,6 +86,7 @@
 
     @include desktop {
       margin-top: 74px;
+      margin-bottom: 112px;
     }
   }
 
@@ -59,18 +98,86 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--color-primary-light);
+
+    @include tablet {
+      font-size: 22px;
+      line-height: 25px;
+    }
+
+    @include desktop {
+      font-size: 38px;
+      line-height: 44px;
+    }
   }
 
   &__title-span {
     color: var(--color-secondary-dark-pink);
     font-size: 48px;
-    // 45.84px
     line-height: 0.96;
     letter-spacing: 0.04em;
+
+    @include tablet {
+      font-size: 34px;
+      line-height: 31px;
+    }
+
+    @include desktop {
+      font-size: 58px;
+      line-height: 53px;
+    }
   }
 
   &__button-wrap {
     display: flex;
+    margin-top: 20px;
+  }
+
+  &-btn1 {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      width: 62.4px;
+      height: 24px;
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      color: var(--color-primary-light);
+      background-color: var(--color-secondary-dark-pink);
+      font-size: 8px;
+      line-height: 10px;
+      margin-right: 8px;
+    }
+
+    @include desktop {
+      width: 104px;
+      height: 40px;
+      margin-right: 15px;
+    }
+  }
+
+  &-btn2 {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+      width: 82.8px;
+      height: 24px;
+      border-radius: 22px;
+      display: flex;
+      justify-content: center;
+      color: var(--color-secondary-dark-pink);
+      background-color: var(--color-primary-light);
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    @include desktop {
+      width: 104px;
+      height: 40px;
+    }
   }
 
   &__paragraph {
@@ -87,6 +194,8 @@
       width: 114px;
       height: 48px;
       margin-left: 120px;
+      z-index: 1;
+      // padding-bottom: 59px;
     }
 
     @include desktop {
@@ -99,8 +208,18 @@
   }
 
   &__arrow-link {
-    width: 20px;
-    height: 12px;
+    outline: none;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--color-primary-light);
+    margin-top: 7px;
+
+    @include desktop {
+      width: 26px;
+      height: 26px;
+    }
   }
 
   // images _______________________________________
@@ -110,6 +229,7 @@
     bottom: 0;
     right: 32px;
     max-width: 171px;
+    z-index: 1;
 
     @include tablet {
       right: 247px;
@@ -131,6 +251,7 @@
       right: 34px;
       width: 168px;
       height: 133px;
+      z-index: 1;
     }
 
     @include desktop {
@@ -141,6 +262,7 @@
 
   &__milk {
     display: none;
+
     @include tablet {
       width: 124px;
       height: 126px;
@@ -156,6 +278,7 @@
       height: 191px;
       left: 77px;
       bottom: 45px;
+      margin-top: 56px;
     }
   }
 }
@@ -164,13 +287,15 @@
   display: none;
 
   @include tablet {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 160px;
     height: 44px;
     border-radius: 22px;
     display: flex;
     justify-content: center;
     background-color: var(--color-primary-light);
+    margin-left: 30px;
 
     &:hover,
     &:focus {
@@ -183,6 +308,10 @@
       line-height: 21px;
       color: var(--color-secondary-dark-pink);
       margin-right: 12px;
+    }
+
+    &__icon {
+      fill: var(--color-secondary-dark-pink);
     }
   }
 }
