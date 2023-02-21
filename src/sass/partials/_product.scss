@@ -97,13 +97,15 @@
     &:first-child::before {
       content: '';
       position: absolute;
-      left: 50%;
-      top: -113px;
+      left: 0;
+      top: 50%;
       transform: translateX(-50%);
       width: 249px;
       height: 252px;
       background-image: url('../images/home-pic1-mob-249.png');
       background-size: 249px 252px;
+      animation: floatImage 4s ease-in-out infinite;
+      animation-delay: 3s;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/home-pic1-mob-498.png');
@@ -136,13 +138,15 @@
     &:nth-child(2)::before {
       content: '';
       position: absolute;
-      left: 50%;
-      top: -113px;
+      left: 0;
+      top: 50%;
       transform: translateX(-50%);
       width: 249px;
       height: 252px;
       background-image: url('../images/home-pic2-mob-249.png');
       background-size: 249px 252px;
+      animation: floatImage 4s ease-in-out infinite;
+      animation-delay: 3s;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/home-pic2-mob-498.png');
@@ -175,13 +179,15 @@
     &:nth-child(3)::before {
       content: '';
       position: absolute;
-      left: 50%;
-      top: -113px;
+      left: 0;
+      top: 50%;
       transform: translateX(-50%);
       width: 249px;
       height: 252px;
       background-image: url('../images/home-pic3-mob-249.png');
       background-size: 249px 252px;
+      animation: floatImage 4s ease-in-out infinite;
+      animation-delay: 3s;
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/home-pic3-mob-498.png');
@@ -294,5 +300,16 @@
     @include desktop{
       margin: 30px auto;
     }
+  }
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
