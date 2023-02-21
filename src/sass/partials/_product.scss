@@ -5,6 +5,7 @@
   @include tablet {
     padding: 122px 112px;
   }
+
   @include desktop {
     padding: 127px 114px;
   }
@@ -105,7 +106,9 @@
       background-image: url('../images/home-pic1-mob-249.png');
       background-size: 249px 252px;
 
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
         background-image: url('../images/home-pic1-mob-498.png');
       }
 
@@ -115,7 +118,9 @@
         background-image: url('../images/home-pic1-tab-220.png');
         background-size: 220px 226px;
 
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
           background-image: url('../images/home-pic1-tab-440.png');
         }
       }
@@ -127,7 +132,9 @@
         background-image: url('../images/home-pic1-desk-335.png');
         background-size: 335px 335px;
 
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
           background-image: url('../images/home-pic1-desk-670.png');
         }
       }
@@ -144,7 +151,9 @@
       background-image: url('../images/home-pic2-mob-249.png');
       background-size: 249px 252px;
 
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
         background-image: url('../images/home-pic2-mob-498.png');
       }
 
@@ -154,7 +163,9 @@
         background-image: url('../images/home-pic2-tab-220.png');
         background-size: 220px 226px;
 
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
           background-image: url('../images/home-pic2-tab-440.png');
         }
       }
@@ -166,7 +177,9 @@
         background-image: url('../images/home-pic2-desk-335.png');
         background-size: 335px 335px;
 
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
           background-image: url('../images/home-pic2-desk-670.png');
         }
       }
@@ -183,7 +196,9 @@
       background-image: url('../images/home-pic3-mob-249.png');
       background-size: 249px 252px;
 
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
         background-image: url('../images/home-pic3-mob-498.png');
       }
 
@@ -193,7 +208,9 @@
         background-image: url('../images/home-pic3-tab-220.png');
         background-size: 220px 226px;
 
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
           background-image: url('../images/home-pic3-tab-440.png');
         }
 
@@ -204,7 +221,9 @@
           background-image: url('../images/home-pic3-desk-335.png');
           background-size: 335px 335px;
 
-          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
             background-image: url('../images/home-pic3-desk-670.png');
           }
         }
@@ -241,7 +260,7 @@
     }
 
     @include desktop {
-      margin-top:110px;
+      margin-top: 110px;
       font-size: 30px;
       line-height: 1.13;
     }
@@ -281,6 +300,7 @@
       display: none;
     }
   }
+
   &__arrow-btn {
     background-image: url('/src/images/arrow-right-4-x1-min.png');
     background-size: cover;
@@ -291,7 +311,7 @@
     height: 40px;
     margin: 0 auto;
 
-    @include desktop{
+    @include desktop {
       margin: 30px auto;
     }
   }
