@@ -138,8 +138,6 @@
     @include tablet {
       display: flex;
       align-items: center;
-      width: 62.4px;
-      height: 24px;
       border-radius: 22px;
       display: flex;
       justify-content: center;
@@ -148,12 +146,20 @@
       font-size: 8px;
       line-height: 10px;
       margin-right: 8px;
+      padding: 8px 14px;
     }
 
     @include desktop {
-      width: 104px;
-      height: 40px;
+      font-size: 14px;
+      line-height: 18px;
       margin-right: 15px;
+      padding: 12px 19px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+      fill: var(--color-primary-light);
     }
   }
 
@@ -163,8 +169,6 @@
     @include tablet {
       display: flex;
       align-items: center;
-      width: 82.8px;
-      height: 24px;
       border-radius: 22px;
       display: flex;
       justify-content: center;
@@ -172,11 +176,19 @@
       background-color: var(--color-primary-light);
       font-size: 8px;
       line-height: 10px;
+      padding: 8px 14px;
     }
 
     @include desktop {
-      width: 104px;
-      height: 40px;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 12px 19px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+      fill: var(--color-secondary-dark-pink);
     }
   }
 
@@ -215,10 +227,22 @@
     border-radius: 50%;
     background-color: var(--color-primary-light);
     margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--color-secondary-dark-pink);
+    z-index: 9999;
 
     @include desktop {
       width: 26px;
       height: 26px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-secondary-dark-pink);
+      fill: var(--color-primary-light);
+      transform: rotate(90deg);
     }
   }
 
