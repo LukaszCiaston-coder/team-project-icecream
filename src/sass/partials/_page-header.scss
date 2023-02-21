@@ -232,7 +232,7 @@
     align-items: center;
     fill: var(--color-secondary-dark-pink);
     position: relative;
-    z-index: 9999;
+    z-index: 999;
 
     @include desktop {
       width: 26px;
