@@ -319,10 +319,11 @@
     width: 160px;
     height: 44px;
     border-radius: 22px;
-    display: flex;
     justify-content: center;
     background-color: var(--color-primary-light);
     margin-left: 30px;
+    border-width: 0;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -339,6 +340,7 @@
 
     &__icon {
       fill: var(--color-secondary-dark-pink);
+      margin-top: 3px;
     }
   }
 }
