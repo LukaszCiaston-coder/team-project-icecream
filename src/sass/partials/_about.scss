@@ -90,6 +90,7 @@
 
   &__image {
     display: block;
+    animation: animationCow 5s ease-in-out infinite;
 
     @include tablet {
       margin-right: 17px;
@@ -160,5 +161,19 @@
       cursor: pointer;
       transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+}
+
+@keyframes animationCow {
+  0% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-2px);
   }
 }
