@@ -26,6 +26,11 @@
     text-transform: uppercase;
     color: var(--color-secondary-dark-pink);
 
+    &:hover {
+      transform: scale(1.4);
+      transition: transform 500ms linear;
+    }
+
     &::after {
       display: inline-block;
       position: absolute;
@@ -37,7 +42,13 @@
       width: 16px;
       height: 16px;
       background-color: var(--color-primary-light);
-      // transform: matrix(-1, 0, 0, 1, 0, 0);
+      animation: dots 0.6s ease-in-out alternate infinite;
+
+      @keyframes dots {
+        100% {
+          transform: scale(1.2);
+        }
+      }
     }
 
     @include desktop {

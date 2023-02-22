@@ -27,6 +27,7 @@
       &:hover,
       &:focus {
         color: var(--color-secondary-dark-pink);
+        transition: color 300ms linear;
       }
     }
   }
