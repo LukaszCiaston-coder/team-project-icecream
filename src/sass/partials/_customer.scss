@@ -25,12 +25,39 @@
     line-height: calc(26.04/14);
     margin-top: 18px;
     margin-bottom: 30px;
+    @include tablet {
+    font-size: 14px;
+    line-height: calc(30.24/14);
+    letter-spacing: 0.04em;
+    }
+    @include desktop {
+    font-size: 16px;
+    line-height: calc(29.76/16);
+    }    
     }
     &__description {    
     font-size: 12px;
     line-height: calc(30.6/12);
-    padding: 5em;
-    background-image: repeating-linear-gradient(0deg, transparent 0px 31px, rgba(225, 225, 225, 1) 31px 32px,);}}
+    padding: 43px 66px 26px 57px;
+    background-image: repeating-linear-gradient(0deg, transparent 0px 31px, rgba(225, 225, 225, 1) 31px 32px,transparent 32px 63px, rgba(225, 225, 225, 1) 63px 64px,transparent 64px 91px,rgba(225, 225, 225, 1) 91px 92px),;
+    @include tablet {
+    font-size: 14px;
+    line-height: calc(30.24/14);
+    letter-spacing: 0.04em;
+    padding: 30px 36px 28px 40px;
+    background-image: repeating-linear-gradient(0deg,transparent 0px 34px,rgba(225, 225, 225, 1) 34px 35px, transparent 35px 62px,rgba(225, 225, 225, 1) 62px 63px,transparent 63px 120px, );
+    }
+    @include desktop {
+    font-size: 16px;
+    line-height: calc(29.76/16);
+    padding: 47px 89px 39px 87px;
+    background-image: repeating-linear-gradient(0deg,transparent 0px 37px, rgba(225, 225, 225, 1) 38px 39px, transparent 39px 70px, rgba(225, 225, 225, 1) 70px 71px, transparent 71px 152px, );
+    } 
+    }
+    &__description::before {
+        content: url('../images/speech marks-54.png');
+        margin-bottom: 16px;
+    }}
 .tags {
     display: flex;
     justify-content: center;
@@ -49,9 +76,11 @@
     cursor: pointer;
     &:hover{
      fill: #C7133E;
+     transition: fill 400ms cubic-bezier(0.4, 0, 0.2, 1);
      }
      &:focus{
-     fill: #C7133E;}
+     fill: #C7133E;
+     transition: fill 400ms cubic-bezier(0.4, 0, 0.2, 1);}
     }
 }
             
