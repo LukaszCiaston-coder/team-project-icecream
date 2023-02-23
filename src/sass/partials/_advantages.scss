@@ -1,6 +1,6 @@
 .advantages {
   background-color: var(--bg-color-light-pink);
-  margin-bottom: 97px;
+  padding-bottom: 97px;
   &--margin-auto {
     margin: auto;
   }
@@ -61,7 +61,7 @@
   }
   @media screen and (min-width: 768px) {
     & {
-      margin-bottom: 140px;
+      padding-bottom: 140px;
     }
     &__list {
       flex-direction: row;
@@ -89,7 +89,7 @@
   }
   @media screen and (min-width: 1280px) {
     & {
-      margin-bottom: 139px;
+      padding-bottom: 139px;
     }
     &__list {
       gap: 30px;

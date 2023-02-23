@@ -16,6 +16,8 @@
   }
 
   &__number {
+    position: relative;
+    z-index: 99999;
     font-family: var(--secondary-font-family);
     font-size: 28px;
     line-height: 32px;
@@ -24,10 +26,31 @@
     text-transform: uppercase;
     color: var(--color-secondary-dark-pink);
 
+    &::after {
+      display: inline-block;
+      position: absolute;
+      right: -7px;
+      top: -3px;
+      z-index: -1;
+      content: '';
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      background-color: var(--color-primary-light);
+      // transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
     @include desktop {
       font-weight: 400;
       font-size: 46px;
       line-height: 53px;
+
+      &::after {
+        width: 30px;
+        height: 30px;
+        right: -18px;
+        top: -3px;
+      }
     }
   }
 

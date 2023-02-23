@@ -1,0 +1,96 @@
+.customer{
+    display: block;
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    margin-top: 30px;
+    &__image {
+    width:85px;
+    height:85px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    &__content {
+    margin-top: 29px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color:var(--bg-color-customer);   
+    }
+    &__person {
+    text-align: center;
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(26.04/14);
+    margin-top: 18px;
+    margin-bottom: 30px;
+    @include tablet {
+    font-size: 14px;
+    line-height: calc(30.24/14);
+    letter-spacing: 0.04em;
+    }
+    @include desktop {
+    font-size: 16px;
+    line-height: calc(29.76/16);
+    }    
+    }
+    &__modify{
+    padding: 43px 66px 26px 57px;
+    @include tablet{
+    padding: 30px 36px 28px 40px;
+    }
+    @include desktop {
+    padding: 47px 89px 39px 87px;
+    }
+    }                 
+       
+    &__description {    
+    font-size: 12px;
+    line-height: calc(30.6/12);
+    width: auto;
+    height: auto;
+    background-image: repeating-linear-gradient(0deg, transparent 0px 7px, var(--color-repeating-linear-gradient) 7px 8px, transparent 8px 30px,) ;
+    @include tablet {
+    font-size: 14px;
+    line-height: calc(30.24/14);
+    letter-spacing: 0.04em;
+    background-image: repeating-linear-gradient(0deg, transparent 0px 5px, var(--color-repeating-linear-gradient)  5px 6px, transparent 6px 30px,var(--color-repeating-linear-gradient)  30px 31px, transparent 31px 100px );
+    }
+    @include desktop {
+    font-size: 16px;
+    line-height: calc(29.76/16);
+    background-image: repeating-linear-gradient(0deg,transparent 0px 7px, var(--color-repeating-linear-gradient)  7px 8px, transparent 8px 35px, var(--color-repeating-linear-gradient)  35px 36px, transparent 36px 100px, );
+    } 
+    }
+    &__description::before {
+    content: url('../images/speech marks-54.png');
+    }}
+.tags {
+    display: flex;
+    justify-content: center;
+    &__item{
+    fill: var(--color-icon-customer);
+    margin-left: 10px;
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    &__item{
+    fill: var(--color-icon-customer-primary);
+    margin-left: 18px;
+    margin-bottom: 86px;
+    cursor: pointer;
+    &:hover{
+     fill: var(--color-icon-customer);
+     transition: fill var(--cubic-transition-translate);
+     transform:scale(2);
+     }
+     &:focus{
+     fill: var(--color-icon-customer);
+     transition: fill var(--cubic-transition-translate);}
+    }
+}
+            
+ 
