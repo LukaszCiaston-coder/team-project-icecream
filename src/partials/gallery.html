@@ -1,14 +1,38 @@
-<section class="gallery container">
+<section class="gallery">
   <div class="gallery__container">
     <!------------- first column ------------->
     <ul class="gallery__column gallery__column--first">
       <!-- first item -->
       <li class="column__item first-column__first-item">
-        <img
-          class="column__img"
-          src="./images/gallery/first-image-gallery.png"
-          alt="two green homemade ice creams on stick in bowl and one in glass"
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/first-image-gallery-mobile@1x.png 1x,
+              ./images/gallery/first-image-gallery-mobile@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/first-image-gallery-tablet@1x.png 1x,
+              ./images/gallery/first-image-gallery-tablet@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/first-image-gallery-desktop@1x.png 1x,
+              ./images/gallery/first-image-gallery-desktop@2x.png 2x
+            "
+          />
+          <img
+            class="column__img"
+            src="./images/gallery/first-image-gallery-mobile@1x.png"
+            alt="two green homemade ice creams on stick in bowl and one in glass"
+          />
+        </picture>
       </li>
     </ul>
 
@@ -16,19 +40,63 @@
     <ul class="gallery__column gallery__column--second">
       <!-- first item -->
       <li class="column__item second-column__first-item">
-        <img
-          class="column__img"
-          src="./images/gallery/second-image-gallery1.png"
-          alt="two scoops of ice cream in ice cream cone"
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/second-image-gallery1-mobile@1x.png 1x,
+              ./images/gallery/second-image-gallery1-mobile@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/second-image-gallery1-tablet@1x.png 1x,
+              ./images/gallery/second-image-gallery1-tablet@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/second-image-gallery1-desktop@1x.png 1x,
+              ./images/gallery/second-image-gallery1-desktop@2x.png 2x
+            "
+          />
+          <img
+            class="column__img"
+            src="./images/gallery/second-image-gallery1-mobile@1x.png"
+            alt="two scoops of ice cream in ice cream cone"
+          />
+        </picture>
       </li>
       <!-- second item -->
       <li class="column__item second-column__second-item">
-        <img
-          class="column__img"
-          src="./images/gallery/second-image-gallery2.png"
-          alt="freezed water ice creams on stick with strawberries"
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/second-image-gallery2-mobile@1x.png 1x,
+              ./images/gallery/second-image-gallery2-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/second-image-gallery2-tablet@1x.png 1x,
+              ./images/gallery/second-image-gallery2-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/second-image-gallery2-desktop@1x.png 1x,
+              ./images/gallery/second-image-gallery2-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img"
+            src="./images/gallery/second-image-gallery2-mobile@1x.png"
+            alt="freezed water ice creams on stick with strawberries"
+        /></picture>
       </li>
     </ul>
 
@@ -36,19 +104,59 @@
     <ul class="gallery__column gallery__column--third">
       <!-- first item -->
       <li class="column__item third-column__first-item">
-        <img
-          class="column__img column__img--large"
-          src="./images/gallery/third-image-gallery1.png"
-          alt="eight ice creams with fruit sprinkles, each with different flavour"
-        />
+        <button class="column__button1 column__button1--large"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/third-image-gallery1-mobile@1x.png 1x,
+              ./images/gallery/third-image-gallery1-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/third-image-gallery1-tablet@1x.png 1x,
+              ./images/gallery/third-image-gallery1-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/third-image-gallery1-desktop@1x.png 1x,
+              ./images/gallery/third-image-gallery1-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img column__img--large"
+            src="./images/gallery/third-image-gallery1-mobile@1x.png"
+            alt="eight ice creams with fruit sprinkles, each with different flavour"
+        /></picture>
       </li>
       <!-- second item -->
       <li class="column__item third-column__second-item">
-        <img
-          class="column__img"
-          src="./images/gallery/third-image-gallery2.png"
-          alt="brunet smiling woman holding creamy ice cream"
-        />
+        <button class="column__button1 column__button1--translate"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/third-image-gallery2-mobile@1x.png 1x,
+              ./images/gallery/third-image-gallery2-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/third-image-gallery2-tablet@1x.png 1x,
+              ./images/gallery/third-image-gallery2-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/third-image-gallery2-desktop@1x.png 1x,
+              ./images/gallery/third-image-gallery2-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img column__img--translate"
+            src="./images/gallery/third-image-gallery2-mobile@1x.png"
+            alt="brunet smiling woman holding creamy ice cream"
+        /></picture>
       </li>
     </ul>
 
@@ -56,19 +164,59 @@
     <ul class="gallery__column gallery__column--fourth">
       <!-- first item -->
       <li class="column__item fourth-column__first-item">
-        <img
-          class="column__img"
-          src="./images/gallery/fourth-image-gallery1.png"
-          alt="glass dishes filled with different ice cream flavors with fruits on top"
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/fourth-image-gallery1-mobile@1x.png 1x,
+              ./images/gallery/fourth-image-gallery1-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/fourth-image-gallery1-tablet@1x.png 1x,
+              ./images/gallery/fourth-image-gallery1-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/fourth-image-gallery1-desktop@1x.png 1x,
+              ./images/gallery/fourth-image-gallery1-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img column__img--translate2"
+            src="./images/gallery/fourth-image-gallery1-mobile@1x.png"
+            alt="glass dishes filled with different ice cream flavors with fruits on top"
+        /></picture>
       </li>
       <!-- second item -->
       <li class="column__item fourth-column__second-item">
-        <img
-          class="column__img"
-          src="./images/gallery/fourth-image-gallery2.png"
-          alt="raspberry ice cream held in the tight city alley"
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/fourth-image-gallery2-mobile@1x.png 1x,
+              ./images/gallery/fourth-image-gallery2-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/fourth-image-gallery2-tablet@1x.png 1x,
+              ./images/gallery/fourth-image-gallery2-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/fourth-image-gallery2-desktop@1x.png 1x,
+              ./images/gallery/fourth-image-gallery2-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img"
+            src="./images/gallery/fourth-image-gallery2-mobile@1x.png"
+            alt="raspberry ice cream held in the tight city alley"
+        /></picture>
       </li>
     </ul>
 
@@ -76,19 +224,59 @@
     <ul class="gallery__column gallery__column--fifth">
       <!-- first item -->
       <li class="column__item fifth-column__first-item">
-        <img
-          class="column__img"
-          src="./images/gallery/fifth-image-gallery1.png"
-          alt="small dog tasting strawberry-cream ice cream"
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/fifth-image-gallery1-mobile@1x.png 1x,
+              ./images/gallery/fifth-image-gallery1-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/fifth-image-gallery1-tablet@1x.png 1x,
+              ./images/gallery/fifth-image-gallery1-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/fifth-image-gallery1-desktop@1x.png 1x,
+              ./images/gallery/fifth-image-gallery1-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img"
+            src="./images/gallery/fifth-image-gallery1-mobile@1x.png"
+            alt="small dog tasting strawberry-cream ice cream"
+        /></picture>
       </li>
       <!-- second item -->
       <li class="column__item fifth-column__second-item">
-        <img
-          class="column__img"
-          src="./images/gallery/fifth-image-gallery2.png"
-          alt="milky ice coffee with chocolate sprinkles "
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/fifth-image-gallery2-mobile@1x.png 1x,
+              ./images/gallery/fifth-image-gallery2-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/fifth-image-gallery2-tablet@1x.png 1x,
+              ./images/gallery/fifth-image-gallery2-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/fifth-image-gallery2-desktop@1x.png 1x,
+              ./images/gallery/fifth-image-gallery2-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img"
+            src="./images/gallery/fifth-image-gallery2-mobile@1x.png"
+            alt="milky ice coffee with chocolate sprinkles "
+        /></picture>
       </li>
     </ul>
 
@@ -96,11 +284,31 @@
     <ul class="gallery__column gallery__column--sixth">
       <!-- first item -->
       <li class="column__item sixth-column__first-item">
-        <img
-          class="column__img"
-          src="./images/gallery/sixth-image-gallery.png"
-          alt="ice cream bouquet in glass with many flavours, crunchy waffles and colorful sprinkles"
-        />
+        <button class="column__button1"></button>
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/gallery/sixth-image-gallery-mobile@1x.png 1x,
+              ./images/gallery/sixth-image-gallery-mobile@2x.png 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/gallery/sixth-image-gallery-tablet@1x.png 1x,
+              ./images/gallery/sixth-image-gallery-tablet@2x.png 2x
+            " />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/gallery/sixth-image-gallery-desktop@1x.png 1x,
+              ./images/gallery/sixth-image-gallery-desktop@2x.png 2x
+            " />
+          <img
+            class="column__img"
+            src="./images/gallery/sixth-image-gallery-mobile@1x.png"
+            alt="ice cream bouquet in glass with many flavours, crunchy waffles and colorful sprinkles"
+        /></picture>
       </li>
     </ul>
   </div>
