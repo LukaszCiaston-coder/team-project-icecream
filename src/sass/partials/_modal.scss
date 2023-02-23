@@ -20,9 +20,9 @@
   z-index: 9999;
   padding: 40px;
   border-radius: 20px;
-  width: 400px;
+  width: 90%;
   height: 500px;
-  background-color: white;
+  background-color: var(--bg-color-light-pink);
   background-image: url('../images/sectionbg-milk-mob-320.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -30,6 +30,26 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url('../images/sectionbg-milk-mob-640.png');
+  }
+    @include tablet {
+      width:50%;
+    }
+  
+    @include desktop {
+      width:40%;
+      background-image: url('../images/sectionbg-milk-desk-1280.png');
+      background-position-y: 100%;
+  
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url('../images/sectionbg-milk-desk-2560.png');
+      }
+    }
 
   &__close {
     position: absolute;
@@ -37,11 +57,12 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    background-color: pink;
-    border: 1px solid rgb(240, 160, 173);
+    background-color: var(--color-secondary-dark-pink);
+    border: none;
     border-radius: 50%;
     cursor: pointer;
   }
+    
   &__close-icon {
     display: inline-block;
     position: absolute;
@@ -50,6 +71,7 @@
     transform: translate(-50%, -50%);
     fill: white;
   }
+  
   &__text {
     font-family: var(--secondary-font-family);
     font-size: 20px;
@@ -75,14 +97,11 @@
     margin-bottom: 10px;
     margin-top: 4px;
     height: 40px;
-    width: 320px;
+    width: 100%;
   }
   &--focus:focus {
     outline: 1px solid pink;
     border-radius: 4px;
-    &:focus ~ .modal__icon {
-      fill: rgba(33, 150, 243, 1);
-    }
   }
   &__button {
     display: flex;
