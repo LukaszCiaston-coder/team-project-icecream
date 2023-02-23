@@ -9,15 +9,30 @@
 
   &__circle {
     display: inline-block;
-    // position: absolute;
     width: 346px;
     height: 344px;
     margin-left: 36px;
     margin-top: 83px;
     z-index: 0;
-    // content: '';
     border-radius: 50%;
+    box-shadow: 10px 0 10px -5px rgba(212, 20, 67, 0.3), -10px 0 10px -5px rgba(212, 20, 67, 0.3);
     background-color: var(--color-secondary-light-pink);
+
+    animation-name: changeBgColor;
+    animation-duration: 2500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+    @keyframes changeBgColor {
+      0% {
+        background-color: rgba(212, 20, 67, 0.2);
+      }
+
+      100% {
+        background-color: var(--color-secondary-light-pink);
+      }
+    }
 
     @include tablet {
       width: 324px;
@@ -31,9 +46,6 @@
       height: 538px;
       margin-top: 19px;
       margin-left: 333px;
-    }
-
-    @include desktop {
     }
   }
 
@@ -50,7 +62,6 @@
       max-height: 399px;
     }
 
-    // this part does not work, computed height is 555px ?
     @include desktop {
       height: 665px;
       max-height: 100%;
@@ -160,6 +171,8 @@
     &:focus {
       background-color: #c7133e;
       fill: var(--color-primary-light);
+      transform: scale(1.1);
+      transition: transform 300ms linear;
     }
   }
 
@@ -189,6 +202,8 @@
     &:focus {
       background-color: #ecebeb;
       fill: var(--color-secondary-dark-pink);
+      transform: scale(1.1);
+      transition: transform 300ms linear;
     }
   }
 
@@ -207,7 +222,6 @@
       height: 48px;
       margin-left: 120px;
       z-index: 1;
-      // padding-bottom: 59px;
     }
 
     @include desktop {
@@ -244,8 +258,7 @@
       background-color: var(--color-secondary-dark-pink);
       fill: var(--color-primary-light);
       transform: rotate(90deg);
-
-      // circle wrapper prevents the button from being clicked
+      transition: transform 500ms linear, background-color 750ms ease;
     }
   }
 
@@ -298,6 +311,22 @@
       bottom: 28px;
       left: 34px;
       max-width: 171px;
+
+      animation: animateX 2500ms infinite;
+
+      @keyframes animateX {
+        0% {
+          transform: translateX(0);
+        }
+
+        50% {
+          transform: translateX(10px);
+        }
+
+        100% {
+          transform: translateX(0);
+        }
+      }
     }
 
     @include desktop {
@@ -328,6 +357,8 @@
     &:hover,
     &:focus {
       background-color: #ecebeb;
+      transform: scale(1.05);
+      transition: transform 300ms linear;
     }
 
     &__span {
