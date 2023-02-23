@@ -1,0 +1,29 @@
+.button-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 15px; /* Place the button at the bottom of the page */
+  right: 15px; /* Place the button 30px from the right */
+  z-index: 999; /* Make sure it does not overlap */
+  // border: none; /* Remove borders */
+  background-color: var(--color-icon-customer);
+  border:none;  /* Set a background color */
+  fill:var(--bg-color-light-pink); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  opacity: 0.2;
+  // outline: none;  /* Remove outline */
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-radius 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
+  border-radius: 35%;
+}
+
+.button-to-top:hover {
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.icon__scroll-up {
+
+  border: none;
+} 
