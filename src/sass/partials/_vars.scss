@@ -13,5 +13,11 @@
   --bg-color-dark-pink: #ffb8ca;
   // animations
   --cubic-transition-scale: scale 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-transition-scale--delay: scale 400ms cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+  --cubic-transition-scale--small-delay: scale 400ms cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  --cubic-transition-translate--delay: translate 400ms cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
   --cubic-transition-translate: translate 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-transition-width: width 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-transition-transfrom: transfrom 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-transition-rotateX-in: rotateX-in 300ms ease-in-out;
 }
